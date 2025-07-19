@@ -1,0 +1,169 @@
+body {
+  background-color: #c6c6c6;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #09122c;
+  position: fixed;
+  z-index: 1030;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+nav .dark {
+  color: #872341;
+}
+
+nav .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 250px;
+  height: 1000px;
+  background: #be3144;
+  padding: 20px 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 5px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu a:hover {
+  background-color: #872341;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-menu a.active {
+  background-color: #872341;
+  color: white;
+  border-left: 3px solid #ffffff;
+}
+
+.sidebar-menu svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.main-content {
+  margin-left: 275px;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.main-content hr {
+  margin-left: -25px;
+  border-color: #09122c;
+  opacity: 0.3;
+}
+
+.main-content h3 {
+  color: #09122c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Card styling untuk Bootstrap components */
+.card {
+  background-color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card-header {
+  background-color: #09122c;
+  color: white;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0 !important;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #545b62;
+}
+
+.navbar-text {
+  color: white !important;
+}
+
+.table {
+  background-color: white;
+}
+
+.badge {
+  font-size: 0.875em;
+  padding: 0.5em 0.75em;
+}
+
+/* Style untuk alert messages */
+.alert {
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 4px solid #28a745;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-left: 4px solid #dc3545;
+}
+
+/* Form styling improvements */
+.form-control:focus {
+  border-color: #be3144;
+  box-shadow: 0 0 0 0.2rem rgba(190, 49, 68, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 8px;
+}

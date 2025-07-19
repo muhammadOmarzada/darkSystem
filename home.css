@@ -1,0 +1,254 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+   padding-top: 80px; /* Adjust based on navbar height */
+}
+
+.navbar {
+  background-color: #0a122a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo .dark {
+  color: #b4344c;
+}
+
+.logo .system {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #b4344c;
+}
+
+.banner-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/web banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .nav-menu {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .banner-section {
+    height: 70vh;
+  }
+}
+
+
+/* Ranking Table */
+.ranking-section {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.ranking-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse; /* Ensure no double borders */
+    background-color: transparent; /* Make the background transparent */
+    border-radius: 8px; /* Optional: you can still use rounded corners */
+}
+
+.ranking-table th, .ranking-table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: none; /* Remove the borders */
+}
+
+.ranking-table th {
+    background-color: #0a122a;
+    color: white;
+    font-weight: bold;
+}
+
+.ranking-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.ranking-table tr:hover {
+    background-color: #e2f1ff;
+}
+
+
+/* Rank Number */
+.rank-number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #b4344c;
+}
+/* Logo Styling */
+.team-logo {
+    width: 30px; /* Adjust the logo size as needed */
+    height: 30px;
+    margin-right: 10px; /* Adjust the spacing between logo and name */
+}
+
+.team-column span {
+    font-size: 1.2rem; /* Adjust font size for the team name */
+    font-weight: bold;
+    color: #0a122a; /* Adjust the color of team names */
+}
+
+/* About Us Section */
+.about-us {
+    margin: 80px auto;
+    text-align: left;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #0a122a;
+    font-weight: bold;
+}
+
+.about-title .dark {
+    color: #0a122a;
+}
+
+.about-title .system {
+    color: #0a122a;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    margin-left: 20px; /* Adjust the gap between the title and paragraph */
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #0a122a;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Sponsor Section */
+.sponsor {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.sponsor-item {
+    width: 120px; /* Adjust size of logos */
+    height: auto;
+}
+
+.sponsor-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.official-sponsor {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a122a;
+    color: white;
+}
+
+/* Team Column Styling */
+.team-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px; /* Space between the rank, logo, and team name */
+    padding-left: 10px;
+}
+
+
+
+/* Rank Number Styling */
+.rank-number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #b4344c;
+}
+
+/* Adjust text for team name */
+.team-column span {
+    font-size: 1.2rem; /* Adjust font size for the team name */
+    font-weight: bold;
+    color: #0a122a; /* Adjust the color of team names */
+}

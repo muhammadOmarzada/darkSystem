@@ -1,0 +1,151 @@
+body {
+  background-color: #c6c6c6;
+}
+
+nav {
+  background-color: #09122c;
+  position: fixed;
+  z-index: 1030;
+  width: 100%;
+}
+
+nav .dark {
+  color: #872341;
+}
+
+nav .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 250px;
+  height: 825px;
+  background: #be3144;
+  padding: 20px 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 5px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu a:hover {
+  background-color: #872341;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-menu a.active {
+  background-color: #872341;
+  color: white;
+  border-left: 3px solid #ffffff;
+}
+
+.sidebar-menu svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.main-content {
+  margin-left: 275px;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.main-content hr {
+  margin-left: -25px;
+  border-color: #09122c;
+  opacity: 0.3;
+}
+
+.main-content h3 {
+  color: #09122c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Card styling untuk Bootstrap components */
+.card {
+  background-color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card-header {
+  background-color: #09122c;
+  color: white;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0 !important;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  color: #000;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.navbar-text {
+  color: white !important;
+}
+
+.table {
+  background-color: white;
+}
+
+.table-responsive {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.badge {
+  font-size: 0.875em;
+  padding: 0.5em 0.75em;
+}

@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(135deg, #09122c 0%, #be3144 100%);
+  min-height: 100vh;
+}
+
+.col-4 {
+  background-color: #09122c;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 130px 100px 130px 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+}
+
+.col-4 span {
+  color: #872341;
+}
+
+.col-8 {
+  background: linear-gradient(#be3144 0%, #09122c 100%);
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 130px 100px 130px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.btn {
+  background-color: #be3144;
+  color: white;
+  margin-left: 250px;
+}
+
+.btn:hover {
+  background-color: #872341;
+  color: white;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+}
+.register a {
+  color: #be3144;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
